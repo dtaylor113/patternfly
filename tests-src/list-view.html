@@ -1,0 +1,807 @@
+---
+categories: [Widgets]
+layout: page
+title: List View
+resource: true
+url-js-extra: ['!URL_COMPONENTS!c3/c3.min.js', '!URL_COMPONENTS!d3/d3.min.js']
+---
+<h2>Basic example</h2>
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-code-fork fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event One</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">1</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-plane fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event Two</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">4000</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">200</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">1200</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">600</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-magic fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event Three</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">10</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-gamepad fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event Four</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">4</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">200</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">10</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-rebel fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event Five</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">0</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">0</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">0</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">0</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-linux fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event Six</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">100</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Row Variations</h2>
+
+<!--  three-line-variation -->
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row three-line-variation">
+        <div class="list-content with-menu ">
+          <div class="row sm-gutter">
+            <div class="col-md-1">
+              <div class="grey-circle">
+                <div class="fa fa-bolt fa-3x"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row-heading">Event One</div>
+              <div class="timestamp">Feb 23, 2015  12:32 am</div>
+              <div class="sub-heading">The following snippet of text is <a href="#">rendered as link text.</a></div>
+            </div>
+            <div class="col-md-1">
+              <span id="chart1"></span>
+            </div>
+            <div class="col-md-1">
+              <span id="chart2"></span>
+            </div>
+            <div class="col-md-1">
+              <span id="chart3"></span>
+            </div>
+            <div class="col-md-1">
+              <span id="chart4"></span>
+            </div>
+            <div class="list-actions">
+                <button type="button" class="btn btn-default">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  two-line-variation -->
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row two-line-variation">
+        <div class="list-content with-check-box with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-4">
+              <div class="row-heading">Event One</div>
+              <div class="sub-heading">The following snippet of text is <a href="#">rendered as link text.</a></div>
+            </div>
+            <div class="col-md-8">
+              <div class="object-container">
+                <span class="object-group">
+                  <div class="subtitle">11,235</div>
+                  <div class="subheading">Service One</div>
+                </span>
+                <span class="object-group">
+                  <div class="subtitle">34.3%</div>
+                  <div class="subheading">Service Two</div>
+                </span>
+                <span class="object-group">
+                  <div class="subtitle">22.0%</div>
+                  <div class="subheading">Service Three</div>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button class="btn" type="button">Action</button>
+              <button type="button" class="btn btn-default">Default</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  calandar-variation -->
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row calandar-variation">
+        <div class="list-content with-menu">
+          <div class="row sm-gutter">
+            <div class="col-md-1">
+              <div class="month">March</div>
+              <div class="day">29</div>
+            </div>
+            <div class="col-md-4">
+              <div class="row-heading">Event One</div>
+              <div class="sub-heading">The following snippet of text is <a href="#">rendered as link text.</a></div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">8</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-container-node"></span>
+                  <span class="object-count">10</span>
+                  <span class="object-label">Nodes</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-image"></span>
+                  <span class="object-count">80</span>
+                  <span class="object-label">Images</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions">
+              <button type="button" class="btn btn-default">Default</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row">
+        <div class="list-content with-check-box">
+          <div class="row sm-gutter">
+            <div class="col-md-2">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-rebel fa-2x"></span>
+              </div>
+              <span class="title">
+                <span>Event One</span>
+              </span>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  checked-variation -->
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row checked-variation">
+        <div class="list-content">
+          <div class="row sm-gutter">
+            <div class="col-md-3">
+              <div class="green-circle">
+                <div class="inner-circle">
+                  <span class="fa fa-check-circle-o"></span>
+                </div>
+              </div>
+              <div class="title">
+                <span>Event One</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text">
+                <span>The following snippet of text is <a href="#">rendered as link text.</a></span>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+                <span class="object-group">
+                  <span class="pficon pficon-cluster"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Clusters</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  chart-variation -->
+<div class="list-view-pf">
+  <div class="list-group">
+    <div class="list-group-item">
+      <div class="list-row chart-variation">
+        <div class="list-content with-check-box">
+          <div class="row sm-gutter">
+            <div class="col-md-1 chart-middle">
+              <div class="blue-hollow-circle">
+                <span class="fa fa-rebel fa-2x"></span>
+              </div>
+            </div>
+            <div class="col-md-3 chart-middle">
+              <div class="row-heading">Event One</div>
+              <div class="sub-heading">The following is <a href="#">rendered as link text.</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="chart-pf-sparkline" id="chart5"></div>
+            </div>
+            <div class="col-md-2 chart-bottom">
+              <div class="trend-flat-details">
+                <div class="trend-flat-details-cell">
+                  <span class="trend-title-flat-big-pf">30%</span>
+                </div>
+                <div class="trend-flat-details-cell">
+                  <span class="trend-label-flat-strong-pf">Virtual Disk I/O</span>
+                  <span class="trend-label-flat-pf">76 of 250 MHz</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 chart-middle">
+              <div class="object-container">
+                <span class="object-group">
+                  <span class="pficon pficon-screen"></span>
+                  <span class="object-count">6</span>
+                  <span class="object-label">Hosts</span>
+                </span>
+              </div>
+            </div>
+            <div class="list-actions chart-middle">
+              <button class="btn btn-default" type="button">Action</button>
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><span class="fa fa-ellipsis-v"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-check-box">
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Row Checkbox Selection
+  $(document).ready(function () {
+    $("input[type='checkbox']").change(function (e) {
+      if ($(this).is(":checked")) {
+        $(this).closest('.list-group-item').addClass("active");
+      } else {
+        $(this).closest('.list-group-item').removeClass("active");
+      }
+    });
+  });
+
+  // Donut Charts
+  var c3ChartDefaults = $().c3ChartDefaults();
+  var customDonutChartConfig = c3ChartDefaults.getDefaultDonutConfig('34%');
+  customDonutChartConfig.size.height = 71;
+  customDonutChartConfig.donut.width = 5;
+  customDonutChartConfig.bindto = '#chart1';
+  customDonutChartConfig.data = {
+    type: "donut",
+    columns: [
+      ["Used", 34],
+      ["Available", 86]
+    ],
+    groups: [
+      ["used", "available"]
+    ],
+    order: null
+  };
+  c3.generate(customDonutChartConfig);
+  var donutChartTitle = d3.select("#chart1").select('text.c3-chart-arcs-title');
+  donutChartTitle.text("");
+  donutChartTitle.insert('tspan').text("34%").classed('list-view-donut-title', true);
+
+  customDonutChartConfig = c3ChartDefaults.getDefaultDonutConfig('21%');
+  customDonutChartConfig.size.height = 71;
+  customDonutChartConfig.donut.width = 5;
+  customDonutChartConfig.bindto = '#chart2';
+  customDonutChartConfig.data = {
+    type: "donut",
+    columns: [
+      ["Used", 21],
+      ["Available", 79]
+    ],
+    groups: [
+      ["used", "available"]
+    ],
+    order: null
+  };
+  c3.generate(customDonutChartConfig);
+  donutChartTitle = d3.select("#chart2").select('text.c3-chart-arcs-title');
+  donutChartTitle.text("");
+  donutChartTitle.insert('tspan').text("21%").classed('list-view-donut-title', true);
+
+  customDonutChartConfig = c3ChartDefaults.getDefaultDonutConfig('14%');
+  customDonutChartConfig.size.height = 71;
+  customDonutChartConfig.donut.width = 5;
+  customDonutChartConfig.bindto = '#chart3';
+  customDonutChartConfig.data = {
+    type: "donut",
+    columns: [
+      ["Used", 14],
+      ["Available", 86]
+    ],
+    groups: [
+      ["used", "available"]
+    ],
+    order: null
+  };
+  c3.generate(customDonutChartConfig);
+  donutChartTitle = d3.select("#chart3").select('text.c3-chart-arcs-title');
+  donutChartTitle.text("");
+  donutChartTitle.insert('tspan').text("14%").classed('list-view-donut-title', true);
+
+  customDonutChartConfig = c3ChartDefaults.getDefaultDonutConfig('25%');
+  customDonutChartConfig.size.height = 71;
+  customDonutChartConfig.donut.width = 5;
+  customDonutChartConfig.bindto = '#chart4';
+  customDonutChartConfig.data = {
+    type: "donut",
+    columns: [
+      ["Used", 25],
+      ["Available", 75]
+    ],
+    groups: [
+      ["used", "available"]
+    ],
+    order: null
+  };
+  c3.generate(customDonutChartConfig);
+  donutChartTitle = d3.select("#chart4").select('text.c3-chart-arcs-title');
+  donutChartTitle.text("");
+  donutChartTitle.insert('tspan').text("25%").classed('list-view-donut-title', true);
+
+  // Sparkline Chart
+  var sparklineChartConfig = c3ChartDefaults.getDefaultSparklineConfig();
+  sparklineChartConfig.bindto = '#chart5';
+  sparklineChartConfig.data = {
+    columns: [
+      ['%', 10, 14, 12, 20, 31, 27, 44, 36, 52, 55, 62, 68, 69, 88, 74, 88, 91],
+    ],
+    type: 'area'
+  };
+  c3.generate(sparklineChartConfig);
+</script>
